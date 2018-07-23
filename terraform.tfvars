@@ -1,15 +1,16 @@
-# production values are: prod_blog, ghost:alpine, 2368, 80
-# dev values are: dev_blog, ghost:latest, 2368, 8080
-
-
-container_name = "blog"
-
-image = "ghost:latest"
-
-
-int_port = "2368"
-
-
-ext_port = "8080"
-
-
+container_name = {
+  prod = "prod_blog"
+  dev  = "dev_blog"
+}
+image = {
+  prod = "ghost:alpine"
+  dev  = "ghost:latest"
+}
+int_port = {
+  prod = "2368"
+  dev  = "2368"
+}
+ext_port = {
+  prod = "80"
+  dev  = "8080"
+}
